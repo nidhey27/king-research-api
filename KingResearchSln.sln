@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4314CAB1-1D8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{DEC106DE-CF09-4962-8DCF-9E147C754422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingResearch.API", "KingResearch.API\KingResearch.API.csproj", "{90A11BD5-7DCD-4091-A9F8-D8629DBD3C46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingResearch.API", "KingResearch.API\KingResearch.API.csproj", "{90A11BD5-7DCD-4091-A9F8-D8629DBD3C46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{329E7579-5350-4920-91DE-B5365EE8969D}"
 EndProject
@@ -15,11 +15,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{820C5801-0383-4E97-BA6D-3864B2CD3424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingResearch.Application", "KingResearch.Application\KingResearch.Application.csproj", "{7D1D97D1-7565-4218-8915-D76003F34BAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingResearch.Application", "KingResearch.Application\KingResearch.Application.csproj", "{7D1D97D1-7565-4218-8915-D76003F34BAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingResearch.Domain", "KingResearch.Domain\KingResearch.Domain.csproj", "{6A1E5287-F2DD-40E5-9817-1060085E311A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingResearch.Domain", "KingResearch.Domain\KingResearch.Domain.csproj", "{6A1E5287-F2DD-40E5-9817-1060085E311A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingResearch.Repository", "KingResearch.Repository\KingResearch.Repository.csproj", "{226D8AEF-8D76-492B-B23E-C25A4D0E1656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingResearch.Repository", "KingResearch.Repository\KingResearch.Repository.csproj", "{226D8AEF-8D76-492B-B23E-C25A4D0E1656}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Item", "Solution Item", "{860F5DF6-E028-410F-8DAA-C6D2A009C16A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\script.sql = ..\..\..\..\Documents\script.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

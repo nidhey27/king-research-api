@@ -23,28 +23,28 @@ namespace KingResearch.API.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-            return Ok(_mediator.Send(new EventRequest()));
+            return Ok(await _mediator.Send(new EventRequest()));
         }
 
 
         [HttpPost]
-        public IActionResult Post(CreateEventRequest model)
+        public async Task<IActionResult> PostAsync(CreateEventRequest model)
         {
-            return Ok(_mediator.Send(model));
+            return Ok(await _mediator.Send(model));
         }
 
         [HttpPut]
-        public IActionResult Put(UpdateEventRequest model)
+        public async Task<IActionResult> PutAsync(UpdateEventRequest model)
         {
-            return Ok(_mediator.Send(model));
+            return Ok(await _mediator.Send(model));
         }
 
         [HttpDelete]
-        public IActionResult Delete(int eventId)
+        public async Task<IActionResult> DeleteAsync(int eventId)
         {
-            return Ok(_mediator.Send(new DeleteEventRequest { EventId = eventId }));
+            return Ok(await _mediator.Send(new DeleteEventRequest { EventId = eventId }));
         }
     }
 }

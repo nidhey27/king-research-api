@@ -23,30 +23,30 @@ namespace KingResearch.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-            return Ok(_mediator.Send(new VideoRequest()));
+            return Ok(await _mediator.Send(new VideoRequest()));
         }
 
 
         [HttpPost]
-        public IActionResult Post(CreateVideoRequest video)
+        public async Task<IActionResult> PostAsync(CreateVideoRequest video)
         {
-            return Ok(_mediator.Send(video));
+            return Ok(await _mediator.Send(video));
         }
 
 
         [HttpPut]
-        public IActionResult Put(UpdateVideoRequest video)
+        public async Task<IActionResult> PutAsync(UpdateVideoRequest video)
         {
-            return Ok(_mediator.Send(video));
+            return Ok(await _mediator.Send(video));
         }
 
 
         [HttpDelete]
-        public IActionResult Post(int videoId)
+        public async Task<IActionResult> PostAsync(int videoId)
         {
-            return Ok(_mediator.Send(new DeleteVideoRequest() { VideoId = videoId}));
+            return Ok(await _mediator.Send(new DeleteVideoRequest() { VideoId = videoId}));
         }
     }
 }

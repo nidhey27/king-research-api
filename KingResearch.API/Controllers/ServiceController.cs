@@ -23,30 +23,30 @@ namespace KingResearch.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-            return Ok(_mediator.Send(new ServiceRequest()));
+            return Ok(await _mediator.Send(new ServiceRequest()));
         }
 
 
         [HttpPost]
-        public IActionResult Post(CreateServiceRequest model)
+        public async Task<IActionResult> PostAsync(CreateServiceRequest model)
         {
-            return Ok(_mediator.Send(model));
+            return Ok(await _mediator.Send(model));
         }
 
         [HttpPut]
 
-        public IActionResult Update(UpdateServiceRequest request)
+        public async Task<IActionResult> UpdateAsync(UpdateServiceRequest request)
         {
-            return Ok(_mediator.Send(request));
+            return Ok(await _mediator.Send(request));
         }
 
         [HttpDelete]
 
-        public IActionResult Update(int ServiceId)
+        public async Task<IActionResult> UpdateAsync(int ServiceId)
         {
-            return Ok(_mediator.Send(new DeleteServiceRequest { ServiceId = ServiceId}));
+            return Ok(await _mediator.Send(new DeleteServiceRequest { ServiceId = ServiceId}));
         }
     }
 }
